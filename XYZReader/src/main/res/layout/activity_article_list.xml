@@ -11,13 +11,12 @@
         android:layout_height="256dp"
         android:fitsSystemWindows="true"
         app:toolbarId="@+id/toolbar"
-        android:elevation="8dp"
+        android:elevation="@dimen/app_bar_elevation"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
 
         <android.support.design.widget.CollapsingToolbarLayout
             android:id="@+id/toolbar_container"
             android:background="@color/theme_primary"
-            android:elevation="8dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:contentScrim="?attr/colorPrimary"

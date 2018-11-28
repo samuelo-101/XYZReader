@@ -1,15 +1,7 @@
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginBottom="4dp"
-    android:layout_marginLeft="4dp"
-    android:layout_marginRight="4dp"
-    android:layout_marginTop="4dp"
-    android:clickable="true"
-    android:focusable="true"
-    android:foreground="?selectableItemBackground">
+    style="@style/ListItemCardView">
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
@@ -20,7 +12,6 @@
             android:id="@+id/thumbnail"
             android:layout_width="@dimen/image_width"
             android:layout_height="@dimen/image_height"
-            android:transitionName="@string/activity_image_transition"
             android:background="@color/photo_placeholder"
             android:scaleType="centerCrop"
             app:layout_constraintStart_toStartOf="parent"

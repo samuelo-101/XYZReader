@@ -129,7 +129,6 @@ public class ArticleListActivity extends AppCompatActivity implements
 
     private class Adapter extends RecyclerView.Adapter<ViewHolder> {
         private Cursor mCursor;
-        private int lastPosition = -1;
 
         public Adapter(Cursor cursor) {
             mCursor = cursor;
@@ -183,6 +182,7 @@ public class ArticleListActivity extends AppCompatActivity implements
                     mCursor.getString(ArticleLoader.Query.THUMB_URL),
                     ImageLoaderHelper.getInstance(ArticleListActivity.this).getImageLoader());
             holder.thumbnailView.setAspectRatio(mCursor.getFloat(ArticleLoader.Query.ASPECT_RATIO));
+            holder.thumbnailView.setTransitionName("photo" + position);
 
             holder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
